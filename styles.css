@@ -106,6 +106,7 @@ nav.site .wrap { display: flex; align-items: center; justify-content: space-betw
 .navactions { display: flex; align-items: center; gap: 12px; }
 .nav-cb { position: absolute; opacity: 0; pointer-events: none; }
 .menu-btn { display: none; font-size: 1.4rem; line-height: 1; width: 40px; height: 40px; align-items: center; justify-content: center; border: 1px solid var(--hairline); border-radius: var(--r-md); background: transparent; color: var(--ink); cursor: pointer; user-select: none; }
+.nav-cta .cta-short { display: none; }
 
 /* Theme toggle */
 .toggle {
@@ -282,6 +283,10 @@ footer.site .fmeta { font-family: var(--mono); font-size: .7rem; text-transform:
   :root { --gutter: 20px; }
 
   .menu-btn { display: inline-flex; }
+  .nav-cta .cta-long { display: none; }
+  .nav-cta .cta-short { display: inline; }
+  .navactions { gap: 10px; }
+  nav.site .wrap { gap: 10px; }
   .navlinks {
     position: absolute; top: 66px; left: 0; right: 0;
     flex-direction: column; align-items: stretch; gap: 0;
