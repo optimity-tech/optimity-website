@@ -5,4 +5,4 @@ services:
     container_name: optimity-website
     restart: always
     ports:
-      - "80:80"
+      - "8080:80"

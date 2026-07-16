@@ -6,8 +6,9 @@ RUN rm -rf /usr/share/nginx/html/*
 # Copy custom nginx config
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Copy website HTML, CSS, and JS files
-COPY *.html *.css *.js /usr/share/nginx/html/
+# Copy website HTML, CSS, JS, PNG, and PDF files
+COPY *.html *.css *.js *.png *.pdf *.txt *.xml /usr/share/nginx/html/
+COPY favicon/ /usr/share/nginx/html/
 
 EXPOSE 80
 
