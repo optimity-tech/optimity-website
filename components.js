@@ -32,8 +32,8 @@
   function loadComponent(id, file, callback) {
     var el = document.getElementById(id);
     if (!el) return;
-    // If SSI already populated the content, just run callback
-    if (el.innerHTML.trim().length > 0) {
+    // If SSI already populated the content (actual DOM elements exist), just run callback
+    if (el.children.length > 0) {
       if (callback) callback();
       return;
     }
