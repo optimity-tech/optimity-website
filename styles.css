@@ -663,8 +663,103 @@ footer.site .fmeta { font-family: var(--mono); font-size: .7rem; text-transform:
     flex-grow: 1; text-align: center; justify-content: center; padding: 12px 18px; font-size: 0.94rem; display: inline-flex;
   }
 }
+
 @media (max-width: 680px) {
   .cols-2, .services-grid { grid-template-columns: 1fr; }
   section { padding: var(--sp-64) 0; }
   :root { --gutter: 20px; }
 }
+
+/* Trusted By Companies Section — Engineered Editorial Design */
+.trusted-section {
+  background: var(--paper);
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+  padding: var(--sp-64) 0;
+}
+
+.trusted-logos-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--sp-16);
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .trusted-logos-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .trusted-logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.trusted-card {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-md);
+  padding: 12px 14px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  transition: transform var(--dur-short) var(--ease-out), border-color var(--dur-short), box-shadow var(--dur-short);
+}
+
+[data-theme="dark"] .trusted-card {
+  background: var(--paper);
+}
+
+
+.trusted-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px -4px rgba(20, 17, 14, 0.12);
+}
+
+.trusted-logo-img {
+  max-height: 42px !important;
+  max-width: 110px !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  object-position: center;
+  mix-blend-mode: multiply;
+  filter: grayscale(100%) opacity(0.75);
+  transition: filter var(--dur-short) var(--ease-out), opacity var(--dur-short);
+}
+
+[data-theme="dark"] .trusted-logo-img {
+  mix-blend-mode: normal;
+  filter: grayscale(100%) invert(0.9) opacity(0.85);
+}
+
+.trusted-card:hover .trusted-logo-img {
+  filter: grayscale(0%) opacity(1);
+}
+
+[data-theme="dark"] .trusted-card:hover .trusted-logo-img {
+  filter: grayscale(0%) opacity(1);
+}
+
+.trusted-logo-text {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+
+
+
