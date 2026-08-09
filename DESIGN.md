@@ -111,3 +111,4 @@ Purple/violet gradients · 3-column icon-in-circle feature grids · giant icon g
 | 2026-08-09 | Methodology = 6 steps grouped under 3 stages | Integrate + Deploy shown explicitly as the anti-proposal proof; evolves rather than resets how-we-work |
 | 2026-08-09 | Nav CTA stays "Book an Operations Teardown"; "Start a Project" rejected | Teardown is the low-friction wedge offer; raising the commitment bar in the nav would fight the funnel |
 | 2026-08-09 | Voice rules encoded; banned-phrase list added | Branch pages (industries/why-optimity/about) shipped platform-pitch copy contradicting how-we-work |
+| 2026-08-09 | Trusted-by logos confirmed permitted (all 7) | Founder confirmed real clients + display permission; recorded in assets/logo/PERMISSIONS.md |
