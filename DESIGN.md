@@ -1,6 +1,19 @@
 # Design System — Optimity
 
-> "Engineered Confidence for SME Operators" (v2). Created by /design-consultation 2026-06-22 as "Engineered Editorial"; revised 2026-08-09 from the founder's forward-deployment direction. v2 is an evolution, not a rebrand: type, palette, spacing, and motion vocabulary carry over.
+> "Engineered Confidence for SME Operators" (v3). Created by /design-consultation 2026-06-22 as "Engineered Editorial"; v2 2026-08-09 from the founder's forward-deployment direction; v3 same day adds the founder's human/non-AI mandate. Evolution, not rebrand: type, palette, spacing carry over.
+
+## The Believability Mandate (v3 — governs everything below)
+**The site must not look AI-generated.** It should read as a small, excellent studio making hundreds of deliberate decisions: editorial design × engineering documentation × premium technology company. If forced to choose between more impressive and more believable, always choose **more believable**. The final feel: *a brilliant engineering team documented their work beautifully* — not a marketing team asking AI to design an engineering company.
+
+Operating rules:
+- **Vary section structure.** Never let every section follow headline → paragraph → 3 cards → CTA. Adjacent sections should differ in shape (hairline list, ledger, split, diagram panel, open editorial column).
+- **Less UI, more editorial.** No boxes inside boxes. Cards only for a genuine grouping relationship; logo walls, principle lists, and step sequences get typography + thin rules + whitespace, not chrome.
+- **Controlled irregularity.** The grid is rigorous; content may deliberately break it — a number in the margin, an artifact wider than its text column, varied section heights, asymmetric image/text splits. Designed, never random.
+- **No repetitive pill UI.** Section labels are plain mono text, not repeated bordered chips.
+- **Real work is the visual identity.** Diagrams show actual tools and flows (CRM → integration → system → operations), never abstract network/AI visualizations. No fake terminals, fake metrics, fake "live" indicators, decorative code, or animated rings pretending to be technology.
+- **Human details, never fabricated ones.** Deployment identifiers, editorial captions, honest labels, footnotes — only where the detail is true. Authenticity > decoration; an empty slot beats an invented one.
+- **Motion is rare and reasoned.** A connection appearing, a line drawing itself, a state transitioning — once, on purpose. Nothing loops forever; nothing floats; `prefers-reduced-motion` stops everything including SVG/SMIL.
+- **The §18 self-audit before shipping:** could this be a Framer template? same structure every section? too many cards? everything symmetrical? abstract visuals instead of real artifacts? looks like an AI company / consultancy / SaaS template? Any yes → fix that section.
 
 ## Product Context
 - **What this is:** Marketing site for Optimity, a forward-deployment technology company for SMEs and mid-market companies. Its job is to book "The Operations Teardown."
@@ -112,3 +125,6 @@ Purple/violet gradients · 3-column icon-in-circle feature grids · giant icon g
 | 2026-08-09 | Nav CTA stays "Book an Operations Teardown"; "Start a Project" rejected | Teardown is the low-friction wedge offer; raising the commitment bar in the nav would fight the funnel |
 | 2026-08-09 | Voice rules encoded; banned-phrase list added | Branch pages (industries/why-optimity/about) shipped platform-pitch copy contradicting how-we-work |
 | 2026-08-09 | Trusted-by logos confirmed permitted (all 7) | Founder confirmed real clients + display permission; recorded in assets/logo/PERMISSIONS.md |
+| 2026-08-09 | v3: Believability Mandate added | Founder: site must not look AI-generated; editorial variation, de-carding, controlled irregularity, no decorative animation, real artifacts only |
+| 2026-08-09 | Kicker de-pilled to plain mono label | Bordered pill on every section = repetitive pill UI, a template signal |
+| 2026-08-09 | Diagrams made static + literal | SMIL pulse loops and rotating "AI CORE" ring were fake live indicators / AI-mystical; replaced with precise static flows naming real tools |
