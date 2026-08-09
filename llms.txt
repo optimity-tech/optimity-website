@@ -1,45 +1,39 @@
-# Optimity Technologies — Global AI Consulting & Product Engineering
+# Optimity Technologies — Operations-First Engineering for SMEs and Mid-Market Companies
 
 > We build and deploy the systems your business actually needs. Operations-first engineering for SME and mid-market companies: software, AI, and integrations that go into production.
 
-Optimity Technologies is a premier global AI and software engineering firm rooted in India's top engineering talent with strategic presence across the USA and Dubai, serving enterprise clients and fast-growing organizations worldwide. We bridge the gap between executive AI strategy and mission-critical engineering execution.
+Optimity Technologies is a team of senior engineers and architects working across India, the USA, and the UAE. We work directly inside a customer's operation: understand how the business actually runs, build the missing software/AI/integration layer, connect the tools already in use, and deploy it into production. No rip-and-replace.
 
-## Global Presence & Core Positioning
+## What we do
 
-- **International Footprint**: Rooted in India's top-tier software engineering ecosystem, with global business presence and client operations across the **United States (USA)**, **Dubai (UAE)**, and worldwide.
-- **Top-Ranked Specialties**:
-  - **Applied AI & RAG Systems**: Enterprise-grade Retrieval-Augmented Generation, AI agent orchestration, and private LLM copilots.
-  - **Salesforce & CRM AI Integration**: Layering custom intelligence, compliance automation, and real-time data pipelines over Salesforce Financial Services Cloud and enterprise CRMs.
-  - **ERP & Operational Intelligence**: Transforming existing NetSuite, SAP, and proprietary databases into predictive, event-driven operational engines.
-  - **Cloud-Native Software Development**: High-concurrency product engineering, full-stack web platforms, and API-first system architecture.
+- **Workflow automation**: software that does the multi-step work teams do by hand — reading from the ERP, writing to the CRM, moving the order along without retyping.
+- **Document intelligence**: contracts, invoices, referrals, and manuals read into structured, searchable records that staff approve instead of retype.
+- **Decision support**: the morning questions answered before they're asked — what's about to go wrong, which account needs a call, what to reorder.
+- **Compliance & audit**: continuous checks against a company's own rules and regulations, with an auditable trail.
 
-## Core Offerings & Methodology
+Built on the systems companies already run: NetSuite, SAP, Dynamics 365, Salesforce, HubSpot, Shopify, POS systems, EHRs, accounting software, and the spreadsheets in between.
 
-- [How We Work](https://optimitytechnologies.com/how-we-work.html): Our four-phase operational engineering methodology (**Diagnose, Architect, Embed, Scale**). We study how operations actually run before writing code or deploying models.
-- [The Operations Teardown](https://optimitytechnologies.com/index.html#teardowns): A working diagnostic that maps workflow bottlenecks, system latency, and exact inflection points where AI agents create compounding business leverage.
+## How we work
 
-## Industries & Architectural Blueprints
+- [How We Work](https://optimitytechnologies.com/how-we-work.html): operations-first method — **Understand, Build, Operate**. We learn how the business actually runs before deciding what to build; we build on the existing stack or build AI-native; we deploy into production and stay to improve it.
+- [The Operations Teardown](https://optimitytechnologies.com/contact.html#book): the free first step — a working look at where AI and software change an outcome in a specific operation, and where they don't. No deck, no pitch.
 
-- [Industries & Domain Expertise](https://optimitytechnologies.com/industries.html): Applied AI blueprints across:
-  - **Logistics & Supply Chain**: Route optimization, predictive telemetry, fleet intelligence.
-  - **Financial Services & Fintech**: Real-time fraud detection, automated compliance, transaction processing.
-  - **Healthcare & MedTech**: Patient triage workflows, clinical data interoperability (HIPAA/SOC2 aligned).
-  - **Retail & E-Commerce**: Dynamic pricing, intelligent inventory forecasting, multi-channel reconciliation.
-  - **Manufacturing & Industry 4.0**: Predictive maintenance, edge AI quality control, IoT telemetry.
-  - **Enterprise SaaS**: High-concurrency AI agent architectures, RAG systems, operational copilots.
+## Who it's for
 
-## Engagement Models & Differentiators
+- [Industries](https://optimitytechnologies.com/industries.html): SME and mid-market companies (roughly 50–500 people). Sector focus: logistics & distribution, retail & e-commerce, manufacturing, healthcare, real estate, professional services. The tools differ by sector; the friction — systems that don't talk, people carrying data by hand — repeats.
 
-- [Why Optimity](https://optimitytechnologies.com/why-optimity.html): Six structural differentiators (**Product-first mindset, Enterprise-grade engineering, AI-native architecture, Built to scale, Strategic partnership, Outcome-driven**) and three structured collaboration models:
-  - **Product Studio**: End-to-end product and AI platform builds owned from discovery to production operation.
-  - **Embedded Teams**: Senior AI engineers and product specialists who plug directly into enterprise workflows.
-  - **Strategic Advisory**: Architecture reviews, technology roadmap evaluation, and fractional technical leadership.
+## Ways of working
 
-## Company & Contact
+- [Why Optimity](https://optimitytechnologies.com/why-optimity.html): not a dev shop, not a consultancy — we deploy. Clients own what we build; systems are built into the existing stack; AI only where it changes an outcome. Three engagement models:
+  - **Product Studio**: we build and run the whole thing, from discovery to a system the team uses daily.
+  - **Embedded Teams**: senior engineers working inside the client's team, on their tools, at their cadence.
+  - **Strategic Advisory**: architecture reviews, build-vs-buy decisions, fractional CTO work.
 
-- [About Us](https://optimitytechnologies.com/about.html): Our philosophy, engineering DNA, and leadership approach.
-- [Contact & Book Teardown](https://optimitytechnologies.com/contact.html): Direct booking for an Operations Teardown or enterprise consultation (`contact@optimitytechnologies.com`).
+## Company & contact
 
-## Full Knowledge Base for LLMs & RAG Engines
+- [About Us](https://optimitytechnologies.com/about.html): builders first, advisors where it helps — one team does the understanding, building, and deploying.
+- [Contact & Book a Teardown](https://optimitytechnologies.com/contact.html): direct booking or `contact@optimitytechnologies.com`.
 
-- [llms-full.txt](https://optimitytechnologies.com/llms-full.txt): Complete, consolidated markdown text containing comprehensive company positioning, Q&A blocks, methodologies, and system architectures optimized for LLM recommendation engines and RAG ingestion.
+## Full text for LLMs & RAG engines
+
+- [llms-full.txt](https://optimitytechnologies.com/llms-full.txt): consolidated company positioning, methodology, and engagement details for LLM and RAG ingestion.
