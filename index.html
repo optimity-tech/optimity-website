@@ -340,62 +340,86 @@
 <!-- TEARDOWNS ACROSS INDUSTRIES -->
 <section id="teardowns" class="band"><div class="wrap">
   <div class="section-head">
-    <span class="kicker">Teardowns across industries</span>
-    <h2>The method holds, whatever your operating model.</h2>
-    <p>Same starting point — your actual systems — three different businesses. Composite examples, shown the way a real teardown looks.</p>
+    <span class="kicker">Deployment log</span>
+    <h2>From problem to production, repeatedly.</h2>
+    <p>Three composite deployments, shown the way real ones read. We publish real results only anonymized — or named with permission.</p>
   </div>
-  <div class="teardowns">
+  <div class="dlog">
 
-    <!-- Cordova compact -->
-    <div class="tcard">
-      <div class="tcard-head">
-        <div class="tcard-title">Cordova Supply Co.</div>
-        <div class="tcard-sub">Distribution · 90 staff · quote-to-cash</div>
+    <!-- Deployment 01 — Cordova -->
+    <article class="dlog-row">
+      <div class="dlog-meta">
+        <span class="dlog-dep mono">Deployment 01</span>
+        <h3 class="dlog-name">Cordova Supply Co.</h3>
+        <span class="dlog-sector mono">Distribution · 90 staff</span>
+        <div class="dlog-chips"><span class="systag">ERP · Dynamics 365</span><span class="systag">CRM · Salesforce</span><span class="systag">Composite example</span></div>
       </div>
-      <div class="tcard-body">
-        <div class="sysrow">
-          <span class="systag">Dynamics 365</span><span class="systag">Salesforce</span><span class="systag">Excel quoting</span>
+      <div class="dlog-body">
+        <div class="dlog-diagram" aria-hidden="true">
+          <div class="dlog-cluster"><span class="dlog-zl state-label mono">Current state</span><div class="dlog-boxes"><span class="dlog-cbox">Dynamics</span><span class="dlog-cbox">Salesforce</span><span class="dlog-cbox">Excel quoting</span></div></div>
+          <span class="dlog-arrow"></span>
+          <div class="dlog-corewrap"><span class="dlog-zl target-label mono">Target state</span><span class="dlog-core">Quote &amp; margin intelligence</span></div>
+          <span class="dlog-arrow"></span>
+          <div class="dlog-prodwrap"><span class="dlog-zl mono">&nbsp;</span><span class="dlog-prod">Production</span></div>
         </div>
-        <div class="tfinding iv"><div class="tn">01</div><div class="tt">Rank aging open quotes by win-probability; agent nudges reps.</div></div>
-        <div class="tfinding iv"><div class="tn">02</div><div class="tt">Flag accounts drifting below target margin from ERP order data.</div></div>
-        <div class="tfinding iv"><div class="tn">03</div><div class="tt">Agent answers stock availability from inventory — exceptions only.</div></div>
-        <div class="notyet"><span class="ny-tag">Not yet</span><span class="ny-text">Delivery routing — your dispatch tool already owns it.</span></div>
+        <div class="dlog-cols">
+          <div class="dlog-col"><span class="mono dlog-h">The problem</span><p>Open quotes ranked by hand every morning; margin drift only surfaced at month-close, after it had cost real money.</p></div>
+          <div class="dlog-col"><span class="mono dlog-h">The system</span><p>An intelligence layer on the ERP and CRM — ranking quotes by win-probability, flagging accounts drifting below target margin.</p></div>
+          <div class="dlog-col"><span class="mono dlog-h">The deployment</span><p>Inside Dynamics and Salesforce, exceptions-only alerts. Reps kept their screens; the ranking came to them.</p></div>
+          <div class="dlog-col"><span class="mono dlog-h">The result</span><p class="dlog-result">Quote follow-up 3 days <b>→ same day</b></p><p class="dlog-resnote">margin drift caught in-week</p></div>
+        </div>
       </div>
-    </div>
+    </article>
 
-    <!-- Meridian Studio -->
-    <div class="tcard">
-      <div class="tcard-head">
-        <div class="tcard-title">Meridian Studio</div>
-        <div class="tcard-sub">Creative agency · 40 staff · project-to-invoice</div>
+    <!-- Deployment 02 — Meridian -->
+    <article class="dlog-row">
+      <div class="dlog-meta">
+        <span class="dlog-dep mono">Deployment 02</span>
+        <h3 class="dlog-name">Meridian Studio</h3>
+        <span class="dlog-sector mono">Creative agency · 40 staff</span>
+        <div class="dlog-chips"><span class="systag">Asana</span><span class="systag">HubSpot</span><span class="systag">QuickBooks</span><span class="systag">Composite example</span></div>
       </div>
-      <div class="tcard-body">
-        <div class="sysrow">
-          <span class="systag">Asana</span><span class="systag">HubSpot</span><span class="systag">Harvest</span><span class="systag">QuickBooks</span>
+      <div class="dlog-body">
+        <div class="dlog-diagram" aria-hidden="true">
+          <div class="dlog-cluster"><span class="dlog-zl state-label mono">Current state</span><div class="dlog-boxes"><span class="dlog-cbox">Asana</span><span class="dlog-cbox">HubSpot</span><span class="dlog-cbox">QuickBooks</span></div></div>
+          <span class="dlog-arrow"></span>
+          <div class="dlog-corewrap"><span class="dlog-zl target-label mono">Target state</span><span class="dlog-core">Project profit layer</span></div>
+          <span class="dlog-arrow"></span>
+          <div class="dlog-prodwrap"><span class="dlog-zl mono">&nbsp;</span><span class="dlog-prod">Production</span></div>
         </div>
-        <div class="tfinding iv"><div class="tn">01</div><div class="tt">Flag projects crossing from quoted scope into unprofitable; alert the lead.</div></div>
-        <div class="tfinding iv"><div class="tn">02</div><div class="tt">Rank accounts at churn risk by engagement decline + contract timing.</div></div>
-        <div class="tfinding iv"><div class="tn">03</div><div class="tt">Agent drafts the weekly client status report from PM and time data.</div></div>
-        <div class="notyet"><span class="ny-tag">Not yet</span><span class="ny-text">Creative judgment stays human.</span></div>
+        <div class="dlog-cols">
+          <div class="dlog-col"><span class="mono dlog-h">The problem</span><p>Quotes, projects, and invoices lived in three tools. Nothing reconciled; month-end took a week of chasing.</p></div>
+          <div class="dlog-col"><span class="mono dlog-h">The system</span><p>One workflow layer connecting CRM, project tracker, and accounting — invoice drafts written from project data.</p></div>
+          <div class="dlog-col"><span class="mono dlog-h">The deployment</span><p>Integrated with the tools the team already used. Nothing ripped out; the team kept working the way they work.</p></div>
+          <div class="dlog-col"><span class="mono dlog-h">The result</span><p class="dlog-result">Invoice lag 11 days <b>→ 2 days</b></p></div>
+        </div>
       </div>
-    </div>
+    </article>
 
-    <!-- Harbor & Pine -->
-    <div class="tcard">
-      <div class="tcard-head">
-        <div class="tcard-title">Harbor &amp; Pine</div>
-        <div class="tcard-sub">Specialty retail · 60 staff · multi-channel inventory</div>
+    <!-- Deployment 03 — Harbor & Pine -->
+    <article class="dlog-row">
+      <div class="dlog-meta">
+        <span class="dlog-dep mono">Deployment 03</span>
+        <h3 class="dlog-name">Harbor <span class="amp">&amp;</span> Pine</h3>
+        <span class="dlog-sector mono">Specialty retail · 60 staff</span>
+        <div class="dlog-chips"><span class="systag">NetSuite</span><span class="systag">Lightspeed POS</span><span class="systag">Shopify</span><span class="systag">Composite example</span></div>
       </div>
-      <div class="tcard-body">
-        <div class="sysrow">
-          <span class="systag">NetSuite</span><span class="systag">Lightspeed POS</span><span class="systag">Shopify</span>
+      <div class="dlog-body">
+        <div class="dlog-diagram" aria-hidden="true">
+          <div class="dlog-cluster"><span class="dlog-zl state-label mono">Current state</span><div class="dlog-boxes"><span class="dlog-cbox">Shopify</span><span class="dlog-cbox">POS</span><span class="dlog-cbox">Spreadsheets</span></div></div>
+          <span class="dlog-arrow"></span>
+          <div class="dlog-corewrap"><span class="dlog-zl target-label mono">Target state</span><span class="dlog-core">Inventory system</span></div>
+          <span class="dlog-arrow"></span>
+          <div class="dlog-prodwrap"><span class="dlog-zl mono">&nbsp;</span><span class="dlog-prod">Production</span></div>
         </div>
-        <div class="tfinding iv"><div class="tn">01</div><div class="tt">Forecast per-SKU velocity on existing sales data; flag reorders before stockout.</div></div>
-        <div class="tfinding iv"><div class="tn">02</div><div class="tt">Continuously reconcile Shopify vs. POS stock; surface mismatches only.</div></div>
-        <div class="tfinding iv"><div class="tn">03</div><div class="tt">Rank aging inventory by days-on-hand + margin; recommend markdown timing.</div></div>
-        <div class="notyet"><span class="ny-tag">Not yet</span><span class="ny-text">Merchandising taste stays human.</span></div>
+        <div class="dlog-cols">
+          <div class="dlog-col"><span class="mono dlog-h">The problem</span><p>Three stock counts, none of them true. Web oversold what stores had already sold.</p></div>
+          <div class="dlog-col"><span class="mono dlog-h">The system</span><p>A single inventory layer reconciling Shopify, POS, and the buying spreadsheet — surfacing mismatches only.</p></div>
+          <div class="dlog-col"><span class="mono dlog-h">The deployment</span><p>Wired into existing accounts; the team kept every tool it already knew.</p></div>
+          <div class="dlog-col"><span class="mono dlog-h">The result</span><p class="dlog-result">Stock mismatches <b>−78%</b></p></div>
+        </div>
       </div>
-    </div>
+    </article>
 
   </div>
 </div></section>
