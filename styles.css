@@ -189,6 +189,26 @@ section.tight { padding: var(--sp-64) 0; }
 
 /* Core Capabilities — Services Matrix */
 .services-matrix .artifact-body { padding: 20px 20px 22px; }
+
+/* Before/After Operations Map (hero artifact) */
+.opsmap { padding: var(--sp-24); }
+.opsmap-label { font-family: var(--mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 10px; }
+.state-label { color: var(--info); }
+.target-label { color: var(--accent); }
+.opsmap-boxes { display: flex; flex-wrap: wrap; gap: var(--sp-8); }
+.opsmap-box { border: 1px solid var(--info); color: var(--info); border-radius: var(--r-sm); padding: 5px 10px; font-family: var(--mono); font-size: .72rem; letter-spacing: .03em; }
+.opsmap-scribble { margin-top: 6px; opacity: .55; display: block; }
+.opsmap-scribble text { font-family: var(--mono); }
+.opsmap-mid { display: flex; align-items: center; gap: 12px; margin: var(--sp-16) 0; }
+.opsmap-line { flex: 1; border-top: 1px solid var(--hairline); }
+.opsmap-fd { color: var(--accent); font-size: .72rem; }
+.opsmap-target-grid { display: grid; grid-template-columns: 1fr auto 1fr; gap: 10px; align-items: center; }
+.opsmap-tcol { display: flex; flex-direction: column; gap: var(--sp-8); }
+.opsmap-tbox { border: 1px solid var(--hairline); color: var(--muted); border-radius: var(--r-sm); padding: 5px 10px; font-family: var(--mono); font-size: .72rem; text-align: center; }
+.opsmap-core { border: 1.5px solid var(--accent); color: var(--accent); border-radius: var(--r-md); padding: var(--sp-16) 14px; font-family: var(--mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; text-align: center; background: var(--accent-tint, #F3E2D2); }
+.opsmap-note { margin-top: var(--sp-16); color: var(--muted); font-size: .78rem; display: flex; justify-content: space-between; align-items: baseline; gap: var(--sp-8); }
+.opsmap-sample { font-size: .6rem; }
+[data-theme="dark"] .opsmap-core { background: color-mix(in srgb, var(--accent) 14%, transparent); }
 .live-pulse { display: inline-flex; align-items: center; gap: 6px; font-weight: 500; }
 .pulse-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); display: inline-block; animation: pulse-opacity 1.8s infinite ease-in-out; }
 @keyframes pulse-opacity {
