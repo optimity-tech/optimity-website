@@ -808,3 +808,67 @@ footer.site .fmeta { font-family: var(--mono); font-size: .7rem; text-transform:
 
 
 
+
+/* --- Inline-style cleanup: shared component + utility classes --- */
+.lead-wide { max-width: 820px; margin-top: var(--sp-24); }
+.lead-mt { margin-top: var(--sp-24); }
+.link { color: var(--accent); text-decoration: none; font-weight: 500; }
+.link-plain { text-decoration: none; }
+.svg-fluid { width: 100%; height: auto; }
+.text-muted { color: var(--muted); }
+.mb-16 { margin-bottom: var(--sp-16); }
+.mb-24 { margin-bottom: var(--sp-24); }
+.mb-48 { margin-bottom: var(--sp-48); }
+.mt-32 { margin-top: var(--sp-32); }
+.cols-2--wide { gap: var(--sp-48); }
+.hero .note { margin-top: 18px; }
+.trusted-section .section-head { margin-bottom: var(--sp-32); }
+
+/* Editorial paragraphs (how-we-work, about) */
+.lede { font-size: 1.1rem; }
+.lede + .lede { margin-top: 18px; }
+.about-split .lede { margin-bottom: 18px; }
+
+/* Stage rows (how-we-work: Understand · Build · Operate) */
+.stage { border-top: 1px solid var(--hairline); padding: var(--sp-32) 0; }
+.stage:last-of-type { border-bottom: 1px solid var(--hairline); }
+.stage h3 { margin: 10px 0 12px; }
+
+/* Engagement model cards (why-optimity) */
+.models-grid { margin-bottom: var(--sp-64); }
+.model-title { font-size: 1.35rem; margin-bottom: 12px; }
+.model-desc { color: var(--muted); font-size: 0.96rem; margin-bottom: 20px; flex-grow: 1; }
+.model-includes { border-top: 1px solid var(--hairline); padding-top: var(--sp-16); }
+.model-includes-label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; margin-bottom: 10px; }
+.model-list { list-style: none; padding: 0; display: grid; gap: var(--sp-8); font-size: 0.88rem; }
+.model-list li { display: flex; gap: var(--sp-8); align-items: center; }
+.model-list li::before { content: "■"; color: var(--accent); }
+.model-best { margin-top: var(--sp-16); padding-top: 12px; border-top: 1px dashed var(--hairline); }
+.model-best-label { font-size: 0.68rem; color: var(--accent); text-transform: uppercase; display: block; }
+.model-best-text { font-weight: 600; font-size: 0.92rem; }
+
+/* About positioning split */
+.split-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; border-top: 1px solid var(--hairline); padding-top: var(--sp-24); }
+.split-label { font-size: 0.75rem; color: var(--accent); text-transform: uppercase; margin-bottom: 6px; }
+.split-title { font-size: 1.15rem; margin-bottom: 6px; }
+.split-text { font-size: 0.92rem; color: var(--muted); }
+
+/* Operating-model / diagram card headers */
+.omc-head { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--hairline); padding-bottom: 12px; flex-wrap: wrap; gap: 12px; }
+.omc-head--roomy { padding-bottom: var(--sp-16); margin-bottom: var(--sp-24); }
+.omc-kicker { font-size: 0.75rem; color: var(--accent); text-transform: uppercase; display: block; }
+.omc-note { font-size: 0.75rem; color: var(--muted); }
+.omc-body { padding: 10px 0; }
+.omc-body--roomy { padding: var(--sp-16) 0; }
+.omc-title { font-size: 1.4rem; margin-top: 4px; }
+
+/* Sector focus panel (industries) */
+.sector-panel { margin-top: var(--sp-48); padding: var(--sp-32); background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); }
+.panel-label { font-size: 0.75rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: var(--sp-16); }
+.panel-note { color: var(--muted); margin-bottom: 20px; font-size: 0.95rem; }
+.chip-row { display: flex; flex-wrap: wrap; gap: var(--sp-8); }
+
+@media (max-width: 680px) {
+  .split-cols { grid-template-columns: 1fr; }
+}
+.operating-model-card--roomy { padding: var(--sp-48); }
