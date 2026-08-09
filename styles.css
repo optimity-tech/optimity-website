@@ -760,7 +760,9 @@ footer.site .fmeta { font-family: var(--mono); font-size: .7rem; text-transform:
 }
 
 [data-theme="dark"] .trusted-card {
-  background: var(--paper);
+  /* Logos are dark marks; they need a light ground in both themes. */
+  background: #F5F1EA;
+  border-color: #DED7CB;
 }
 
 
@@ -771,20 +773,15 @@ footer.site .fmeta { font-family: var(--mono); font-size: .7rem; text-transform:
 }
 
 .trusted-logo-img {
-  max-height: 42px !important;
-  max-width: 110px !important;
-  width: auto !important;
-  height: auto !important;
-  object-fit: contain !important;
+  max-height: 42px;
+  max-width: 110px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   object-position: center;
   mix-blend-mode: multiply;
   filter: grayscale(100%) opacity(0.75);
   transition: filter var(--dur-short) var(--ease-out), opacity var(--dur-short);
-}
-
-[data-theme="dark"] .trusted-logo-img {
-  mix-blend-mode: normal;
-  filter: grayscale(100%) invert(0.9) opacity(0.85);
 }
 
 .trusted-card:hover .trusted-logo-img {

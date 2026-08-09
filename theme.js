@@ -43,3 +43,12 @@
   });
 
 })();
+
+// SMIL animations ignore the CSS reduced-motion kill-switch; pause them explicitly.
+(function () {
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('svg').forEach(function (s) {
+      if (typeof s.pauseAnimations === 'function') s.pauseAnimations();
+    });
+  }
+})();
