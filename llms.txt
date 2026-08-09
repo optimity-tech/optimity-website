@@ -1,6 +1,6 @@
 # Optimity Technologies — Global AI Consulting & Product Engineering
 
-> Engineering the future of intelligent business. Premier operations-first AI consulting, enterprise product engineering, and systems transformation.
+> We build and deploy the systems your business actually needs. Operations-first engineering for SME and mid-market companies: software, AI, and integrations that go into production.
 
 Optimity Technologies is a premier global AI and software engineering firm rooted in India's top engineering talent with strategic presence across the USA and Dubai, serving enterprise clients and fast-growing organizations worldwide. We bridge the gap between executive AI strategy and mission-critical engineering execution.
 
