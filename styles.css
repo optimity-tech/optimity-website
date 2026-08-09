@@ -73,15 +73,12 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 2px; 
   color: var(--muted);
 }
 .eyebrow { margin-bottom: var(--sp-24); }
-.kicker { /* small section label */
+.kicker { /* small section label — plain mono, no pill chrome (DESIGN.md v3) */
   font-family: var(--mono);
   font-size: .7rem;
-  letter-spacing: .12em;
+  letter-spacing: .14em;
   text-transform: uppercase;
   color: var(--accent);
-  border: 1px solid var(--accent);
-  border-radius: var(--r-sm);
-  padding: 4px 9px;
   display: inline-block;
   margin-bottom: var(--sp-16);
 }
@@ -209,12 +206,6 @@ section.tight { padding: var(--sp-64) 0; }
 .opsmap-note { margin-top: var(--sp-16); color: var(--muted); font-size: .78rem; display: flex; justify-content: space-between; align-items: baseline; gap: var(--sp-8); }
 .opsmap-sample { font-size: .6rem; }
 [data-theme="dark"] .opsmap-core { background: color-mix(in srgb, var(--accent) 14%, transparent); }
-.live-pulse { display: inline-flex; align-items: center; gap: 6px; font-weight: 500; }
-.pulse-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); display: inline-block; animation: pulse-opacity 1.8s infinite ease-in-out; }
-@keyframes pulse-opacity {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.3; transform: scale(0.8); }
-}
 
 .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 6px; }
 .services-grid .service-card:last-child { grid-column: 1 / -1; }
@@ -267,76 +258,9 @@ section.tight { padding: var(--sp-64) 0; }
 .service-card:hover .stag { border-color: color-mix(in srgb, var(--accent) 40%, transparent); color: var(--ink); }
 
 /* Rich Keyframe Animations for SVG Micro-Illustrations */
-@keyframes svg-packet-travel {
-  0% { transform: translate(0, 0); opacity: 0; }
-  20% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { transform: translate(72px, -8px); opacity: 0; }
-}
-@keyframes svg-node-pulse {
-  0%, 100% { transform: scale(1); opacity: 0.9; }
-  50% { transform: scale(1.35); opacity: 0.4; }
-}
-@keyframes svg-bar-sweep {
-  0%, 100% { transform: scaleY(0.4); }
-  50% { transform: scaleY(1.0); }
-}
-@keyframes svg-ring-expand {
-  0% { transform: scale(0.6); opacity: 1; }
-  100% { transform: scale(1.8); opacity: 0; }
-}
-@keyframes svg-signal-fire {
-  0%, 100% { opacity: 0.2; stroke-dashoffset: 40; }
-  50% { opacity: 1; stroke-dashoffset: 0; }
-}
-@keyframes svg-core-spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-@keyframes svg-orbit-rotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-@keyframes svg-metric-scale {
-  0%, 100% { transform: scaleX(0.5); }
-  50% { transform: scaleX(1); }
-}
-@keyframes svg-vector-rise {
-  0%, 100% { transform: translateY(3px); }
-  50% { transform: translateY(-4px); }
-}
-@keyframes svg-glow-pulse {
-  0%, 100% { fill-opacity: 0.2; }
-  50% { fill-opacity: 0.85; }
-}
 
-.anim-packet { animation: svg-packet-travel 2.2s infinite cubic-bezier(0.4, 0, 0.2, 1); }
-.anim-node { transform-box: fill-box; transform-origin: center; animation: svg-node-pulse 2s infinite ease-in-out; }
-.anim-bar-1 { transform-box: fill-box; transform-origin: bottom; animation: svg-bar-sweep 2.4s infinite ease-in-out 0s; }
-.anim-bar-2 { transform-box: fill-box; transform-origin: bottom; animation: svg-bar-sweep 2.4s infinite ease-in-out 0.4s; }
-.anim-bar-3 { transform-box: fill-box; transform-origin: bottom; animation: svg-bar-sweep 2.4s infinite ease-in-out 0.8s; }
-.anim-ring { transform-box: fill-box; transform-origin: center; animation: svg-ring-expand 2.6s infinite ease-out; }
-.anim-signal { stroke-dasharray: 8 4; animation: svg-signal-fire 2s infinite linear; }
-.anim-spin { transform-box: fill-box; transform-origin: center; animation: svg-core-spin 12s infinite linear; }
-.anim-orbit { transform-box: fill-box; transform-origin: center; animation: svg-orbit-rotate 8s infinite linear; }
-.anim-metric { transform-box: fill-box; transform-origin: left; animation: svg-metric-scale 3s infinite ease-in-out; }
-.anim-vector { transform-box: fill-box; transform-origin: center; animation: svg-vector-rise 2.8s infinite ease-in-out; }
-.anim-glow { animation: svg-glow-pulse 2.2s infinite ease-in-out; }
 
 /* Neural Brain Circuitry Keyframes (Option 3) */
-@keyframes opt3-cascade {
-  0%, 100% { fill: currentColor; fill-opacity: 0.2; transform: scale(1); stroke-opacity: 0.6; }
-  50% { fill: var(--accent); fill-opacity: 1; transform: scale(1.45); stroke-opacity: 1; }
-}
-@keyframes opt3-line-pulse {
-  0%, 100% { stroke-opacity: 0.15; stroke-width: 1.2; stroke: var(--accent); }
-  50% { stroke-opacity: 0.95; stroke-width: 2.2; stroke: var(--accent); }
-}
-.opt3-n-l1 { transform-box: fill-box; transform-origin: center; animation: opt3-cascade 2.8s infinite ease-in-out 0s; fill: currentColor; fill-opacity: 0.2; }
-.opt3-n-l2 { transform-box: fill-box; transform-origin: center; animation: opt3-cascade 2.8s infinite ease-in-out 0.7s; fill: currentColor; fill-opacity: 0.2; }
-.opt3-n-l3 { transform-box: fill-box; transform-origin: center; animation: opt3-cascade 2.8s infinite ease-in-out 1.4s; fill: currentColor; fill-opacity: 0.2; }
-.opt3-n-l4 { transform-box: fill-box; transform-origin: center; animation: opt3-cascade 2.8s infinite ease-in-out 2.1s; fill: var(--accent); fill-opacity: 0.2; }
-.opt3-path { animation: opt3-line-pulse 2.8s infinite ease-in-out; }
 
 /* Problem Split Section & Visual Card */
 .problem-split {
@@ -403,7 +327,8 @@ section.tight { padding: var(--sp-64) 0; }
 
 /* Two-column entry points */
 .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-24); }
-.entry { background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); padding: var(--sp-32); }
+/* Two ways in: open editorial split, no card chrome (DESIGN.md v3) */
+.entry { border-top: 1px solid var(--ink); padding-top: var(--sp-24); }
 .entry h3 { margin-bottom: var(--sp-8); }
 .entry .tagline { font-family: var(--mono); font-size: .68rem; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); margin-bottom: var(--sp-16); }
 .entry p { color: var(--muted); font-size: .98rem; }
@@ -439,9 +364,9 @@ section.tight { padding: var(--sp-64) 0; }
 .tcard .notyet .ny-text { font-size: .85rem; color: var(--muted); line-height: 1.42; }
 
 /* Funnel steps (how it works after teardown) */
-.funnel { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-24); counter-reset: f; }
-.fstep { padding: var(--sp-24); border: 1px solid var(--hairline); border-radius: var(--r-lg); background: var(--surface); }
-.fstep .fn { font-family: var(--mono); font-size: .72rem; color: var(--accent); margin-bottom: 10px; }
+/* Three steps: editorial columns with large numbers, no card chrome (DESIGN.md v3) */
+.funnel { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-32); border-top: 1px solid var(--ink); padding-top: var(--sp-24); }
+.fstep .fn { font-family: var(--serif); font-size: 2.2rem; font-weight: 400; color: var(--accent); line-height: 1; margin-bottom: 12px; font-variant-numeric: tabular-nums; }
 .fstep h3 { font-size: 1.05rem; margin-bottom: 6px; }
 .fstep p { font-size: .9rem; color: var(--muted); }
 
@@ -733,22 +658,21 @@ footer.site .fmeta { font-family: var(--mono); font-size: .7rem; text-transform:
   align-items: center;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1040px) {
   .trusted-logos-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   .trusted-logos-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Logo wall: no chrome — typography, rules, and whitespace (DESIGN.md v3).
+   Dark mode keeps one plain light band behind the strip (logos are dark marks). */
 .trusted-card {
-  background: var(--surface);
-  border: 1px solid var(--hairline);
-  border-radius: var(--r-md);
   padding: 12px 14px;
   height: 76px;
   display: flex;
@@ -756,20 +680,19 @@ footer.site .fmeta { font-family: var(--mono); font-size: .7rem; text-transform:
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  transition: transform var(--dur-short) var(--ease-out), border-color var(--dur-short), box-shadow var(--dur-short);
 }
 
-[data-theme="dark"] .trusted-card {
-  /* Logos are dark marks; they need a light ground in both themes. */
+.trusted-logos-grid {
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+  padding: var(--sp-16) 0;
+}
+
+[data-theme="dark"] .trusted-logos-grid {
   background: #F5F1EA;
-  border-color: #DED7CB;
-}
-
-
-.trusted-card:hover {
-  border-color: var(--accent);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px -4px rgba(20, 17, 14, 0.12);
+  border-radius: var(--r-md);
+  border-color: transparent;
+  padding: var(--sp-16);
 }
 
 .trusted-logo-img {
@@ -781,15 +704,6 @@ footer.site .fmeta { font-family: var(--mono); font-size: .7rem; text-transform:
   object-position: center;
   mix-blend-mode: multiply;
   filter: grayscale(100%) opacity(0.75);
-  transition: filter var(--dur-short) var(--ease-out), opacity var(--dur-short);
-}
-
-.trusted-card:hover .trusted-logo-img {
-  filter: grayscale(0%) opacity(1);
-}
-
-[data-theme="dark"] .trusted-card:hover .trusted-logo-img {
-  filter: grayscale(0%) opacity(1);
 }
 
 .trusted-logo-text {
@@ -829,10 +743,19 @@ footer.site .fmeta { font-family: var(--mono); font-size: .7rem; text-transform:
 .lede + .lede { margin-top: 18px; }
 .about-split .lede { margin-bottom: 18px; }
 
-/* Stage rows (how-we-work: Understand · Build · Operate) */
-.stage { border-top: 1px solid var(--hairline); padding: var(--sp-32) 0; }
+/* Stage rows (how-we-work: Understand · Build · Operate)
+   Editorial: large serif numeral in the margin, two numbered steps per stage. */
+.stage { border-top: 1px solid var(--hairline); padding: var(--sp-32) 0; display: grid; grid-template-columns: 84px 1fr; gap: var(--sp-24); }
 .stage:last-of-type { border-bottom: 1px solid var(--hairline); }
 .stage h3 { margin: 10px 0 12px; }
+.stage-num { font-family: var(--serif); font-size: 3.6rem; font-weight: 400; line-height: 0.9; color: var(--muted); opacity: .38; font-variant-numeric: tabular-nums; }
+.stage-steps { margin-top: var(--sp-16); display: flex; flex-wrap: wrap; gap: var(--sp-8) var(--sp-24); }
+.stage-steps .mono { font-size: .68rem; }
+.stage-steps b { color: var(--accent); font-weight: 500; margin-right: 4px; }
+@media (max-width: 680px) {
+  .stage { grid-template-columns: 1fr; gap: var(--sp-8); }
+  .stage-num { font-size: 2.2rem; }
+}
 
 /* Engagement model cards (why-optimity) */
 .models-grid { margin-bottom: var(--sp-64); }

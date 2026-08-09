@@ -196,41 +196,28 @@
       <div class="problem-svg-container">
         <svg viewBox="0 0 380 180" fill="none" xmlns="http://www.w3.org/2000/svg">
           <!-- Connecting Data Conduits to Central Core -->
-          <line class="opt3-path" x1="100" y1="38" x2="185" y2="90" stroke="var(--accent)">
-            <animate attributeName="stroke-opacity" values="0.15;0.95;0.15" dur="2.8s" repeatCount="indefinite" begin="0s"/>
-            <animate attributeName="stroke-width" values="1.2;2.4;1.2" dur="2.8s" repeatCount="indefinite" begin="0s"/>
+          <line x1="100" y1="38" x2="185" y2="90" stroke="var(--accent)">
           </line>
-          <line class="opt3-path" x1="100" y1="90" x2="185" y2="90" stroke="var(--accent)" style="animation-delay:0.5s;">
-            <animate attributeName="stroke-opacity" values="0.15;0.95;0.15" dur="2.8s" repeatCount="indefinite" begin="0.5s"/>
-            <animate attributeName="stroke-width" values="1.2;2.4;1.2" dur="2.8s" repeatCount="indefinite" begin="0.5s"/>
+          <line x1="100" y1="90" x2="185" y2="90" stroke="var(--accent)">
           </line>
-          <line class="opt3-path" x1="100" y1="142" x2="185" y2="90" stroke="var(--accent)" style="animation-delay:1.0s;">
-            <animate attributeName="stroke-opacity" values="0.15;0.95;0.15" dur="2.8s" repeatCount="indefinite" begin="1.0s"/>
-            <animate attributeName="stroke-width" values="1.2;2.4;1.2" dur="2.8s" repeatCount="indefinite" begin="1.0s"/>
+          <line x1="100" y1="142" x2="185" y2="90" stroke="var(--accent)">
           </line>
           <line x1="100" y1="38" x2="185" y2="90" stroke="currentColor" stroke-opacity="0.18"/>
           <line x1="100" y1="90" x2="185" y2="90" stroke="currentColor" stroke-opacity="0.18"/>
           <line x1="100" y1="142" x2="185" y2="90" stroke="currentColor" stroke-opacity="0.18"/>
 
           <!-- Traveling Data Packets along Conduits -->
-          <circle class="anim-node" cx="142" cy="64" r="3.5" fill="var(--accent)">
-            <animate attributeName="fill-opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite" begin="0.2s"/>
+          <circle cx="142" cy="64" r="3.5" fill="var(--accent)">
           </circle>
-          <circle class="anim-node" cx="142" cy="90" r="3.5" fill="var(--accent)">
-            <animate attributeName="fill-opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite" begin="0.7s"/>
+          <circle cx="142" cy="90" r="3.5" fill="var(--accent)">
           </circle>
-          <circle class="anim-node" cx="142" cy="116" r="3.5" fill="var(--accent)">
-            <animate attributeName="fill-opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite" begin="1.2s"/>
+          <circle cx="142" cy="116" r="3.5" fill="var(--accent)">
           </circle>
 
           <!-- Outbound Action Conduits -->
-          <line class="opt3-path" x1="245" y1="90" x2="280" y2="60" stroke="var(--accent)" style="animation-delay:1.5s;">
-            <animate attributeName="stroke-opacity" values="0.15;0.95;0.15" dur="2.8s" repeatCount="indefinite" begin="1.5s"/>
-            <animate attributeName="stroke-width" values="1.5;2.5;1.5" dur="2.8s" repeatCount="indefinite" begin="1.5s"/>
+          <line x1="245" y1="90" x2="280" y2="60" stroke="var(--accent)">
           </line>
-          <line class="opt3-path" x1="245" y1="90" x2="280" y2="120" stroke="var(--accent)" style="animation-delay:1.8s;">
-            <animate attributeName="stroke-opacity" values="0.15;0.95;0.15" dur="2.8s" repeatCount="indefinite" begin="1.8s"/>
-            <animate attributeName="stroke-width" values="1.5;2.5;1.5" dur="2.8s" repeatCount="indefinite" begin="1.8s"/>
+          <line x1="245" y1="90" x2="280" y2="120" stroke="var(--accent)">
           </line>
           <line x1="245" y1="90" x2="280" y2="60" stroke="currentColor" stroke-opacity="0.18"/>
           <line x1="245" y1="90" x2="280" y2="120" stroke="currentColor" stroke-opacity="0.18"/>
@@ -241,7 +228,6 @@
           <text x="30" y="38" fill="currentColor" font-family="monospace" font-size="8" font-weight="bold">ERP</text>
           <text x="30" y="48" fill="var(--muted)" font-family="sans-serif" font-size="7">Transactions</text>
           <circle cx="86" cy="38" r="3" fill="currentColor" fill-opacity="0.4">
-            <animate attributeName="fill-opacity" values="0.3;0.9;0.3" dur="2s" repeatCount="indefinite" begin="0s"/>
           </circle>
 
           <!-- CRM -->
@@ -249,7 +235,6 @@
           <text x="30" y="90" fill="currentColor" font-family="monospace" font-size="8" font-weight="bold">CRM</text>
           <text x="30" y="100" fill="var(--muted)" font-family="sans-serif" font-size="7">Customers</text>
           <circle cx="86" cy="90" r="3" fill="currentColor" fill-opacity="0.4">
-            <animate attributeName="fill-opacity" values="0.3;0.9;0.3" dur="2s" repeatCount="indefinite" begin="0.6s"/>
           </circle>
 
           <!-- Tools / Generic AI -->
@@ -257,20 +242,9 @@
           <text x="30" y="142" fill="currentColor" font-family="monospace" font-size="8" font-weight="bold">TOOLS</text>
           <text x="30" y="152" fill="var(--muted)" font-family="sans-serif" font-size="7">Operations</text>
           <circle cx="86" cy="142" r="3" fill="currentColor" fill-opacity="0.4">
-            <animate attributeName="fill-opacity" values="0.3;0.9;0.3" dur="2s" repeatCount="indefinite" begin="1.2s"/>
           </circle>
 
           <!-- CENTER: Optimity Intelligence Core (See · Reason · Act) -->
-          <circle class="anim-ring" cx="215" cy="90" r="42" stroke="var(--accent)" stroke-width="1.2">
-            <animate attributeName="r" values="36;46;36" dur="3s" repeatCount="indefinite"/>
-            <animate attributeName="stroke-opacity" values="0.8;0.15;0.8" dur="3s" repeatCount="indefinite"/>
-          </circle>
-          <circle class="anim-glow" cx="215" cy="90" r="32" fill="var(--accent)">
-            <animate attributeName="fill-opacity" values="0.12;0.5;0.12" dur="2.4s" repeatCount="indefinite"/>
-          </circle>
-          <g class="anim-spin">
-            <circle cx="215" cy="90" r="34" stroke="currentColor" stroke-width="1.6" stroke-dasharray="22 11"/>
-          </g>
           <polygon points="215,58 240,73 240,107 215,122 190,107 190,73" stroke="var(--accent)" stroke-width="2" fill="var(--surface)"/>
           
           <!-- Stacked Labels (SEE / REASON / ACT) -->
@@ -285,7 +259,6 @@
           <!-- Top Alert Box -->
           <rect x="280" y="44" width="84" height="32" rx="6" stroke="var(--accent)" stroke-width="1.8" fill="var(--paper)"/>
           <circle cx="292" cy="60" r="3.5" fill="var(--accent)">
-            <animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite"/>
           </circle>
           <text x="303" y="57" fill="currentColor" font-family="monospace" font-size="7" font-weight="bold">PREDICT</text>
           <text x="303" y="67" fill="var(--muted)" font-family="sans-serif" font-size="6.5">Prevent Drift</text>
@@ -293,7 +266,6 @@
           <!-- Bottom Action Box -->
           <rect x="280" y="104" width="84" height="32" rx="6" stroke="var(--accent)" stroke-width="1.8" fill="var(--paper)"/>
           <circle cx="292" cy="120" r="3.5" fill="var(--accent)">
-            <animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite" begin="0.7s"/>
           </circle>
           <text x="303" y="117" fill="currentColor" font-family="monospace" font-size="7" font-weight="bold">EXECUTE</text>
           <text x="303" y="127" fill="var(--muted)" font-family="sans-serif" font-size="6.5">Next Best Move</text>
