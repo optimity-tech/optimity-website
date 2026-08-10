@@ -7,6 +7,7 @@ Operations-first AI consulting. Static marketing site — six pages, no build st
 - **Shared partials:** `header.html` / `footer.html`, loaded on every page by `components.js` (nginx SSI in production, fetch fallback locally)
 - **Styles:** `styles.css` · **Theme toggle:** `theme.js` · **Design system:** `DESIGN.md`
 - **Booking:** inline Calendly embed on the Contact page (`#book`).
+- **Discovery layer:** `sitemap.xml`, `robots.txt`, `llms.txt` / `llms-full.txt`, `og-image.png` share card, Schema.org JSON-LD in each page head.
 - **Version:** `VERSION` holds the current release (`X.Y.Z.W`); every release gets an entry in `CHANGELOG.md`. Open work lives in `TODOS.md`.
 
 This is staging only. It is **not** wired to the custom domain (optimitytechnologies.com), and no DNS is configured.
@@ -29,8 +30,8 @@ Production runs the site in an nginx container:
 docker compose up -d --build   # serves on 127.0.0.1:3000
 ```
 
-- **`Dockerfile`** — `nginx:1.27-alpine`, copies the HTML/CSS/JS/assets into the web root (favicons are copied to the root because every page links them there).
-- **`nginx.conf`** — clean URLs (`/about` → `about.html`), SSI for the shared header/footer partials, gzip, 30-day static-asset caching, security headers on every response, and `404.html` as the error page for unknown paths.
+- **`Dockerfile`** — `nginx:1.27-alpine`, copies the site files (HTML, CSS, JS, images, the profile PDF, and the txt/xml discovery files) plus `assets/` into the web root (favicons are copied to the root because every page links them there).
+- **`nginx.conf`** — clean URLs (`/about` → `about.html`), SSI for the shared header/footer partials, gzip, 30-day static-asset caching, security headers repeated per location block (a location-level `add_header` cancels inheritance), and `404.html` as the error page for unknown paths.
 - **`docker-compose.yml`** — binds **localhost only** (`127.0.0.1:3000`); a reverse proxy (Dokploy) terminates TLS and exposes the site publicly. Port 3000 must not be reachable externally.
 - **`.dockerignore`** — excludes all Markdown (including the internal `assets/logo/PERMISSIONS.md` ledger) so internal docs are never published to the public web.
 
@@ -53,6 +54,10 @@ git checkout -b edit/hero-copy        # name it for what you're changing
 # 3. Make edits, then commit
 git add -A
 git commit -m "Tighten hero subhead copy"
+
+# If you touched styles.css, theme.js, or components.js: bump the shared
+# `?v=YYYYMMDD-vN` cache-version string everywhere it appears (all pages +
+# components.js) — production caches static assets for 30 days.
 
 # 4. Push the branch and open a PR against main
 git push -u origin edit/hero-copy
