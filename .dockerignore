@@ -1,3 +1,5 @@
 .git
 .gitignore
+.gstack
 *.md
+**/*.md
