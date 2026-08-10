@@ -8,13 +8,9 @@ Add the GA4 tag (needs the founder's `G-XXXXXXX` measurement ID) and verify the 
 
 ## Proof & Content
 
-### Replace one composite deployment with a real anonymized story
+### Publish the first real anonymized deployment story
 **Priority:** P1
-The deployment log ships labeled composites. Convert one of the seven permitted clients (assets/logo/PERMISSIONS.md) into a real, anonymized DEPLOYMENT entry with a true number. Highest-leverage sales asset on the site.
-
-### Replace the SEE/REASON/ACT hexagon diagram
-**Priority:** P2
-index.html problem-section SVG still centers on an abstract "intelligence core" hexagon — the last abstract-AI visual (DESIGN.md v3 believability rule). Redraw as a literal named-system flow in the opsmap/dlog style.
+The composite dossiers were removed (2026-08-10 stakeholder feedback — fictional companies read as fake next to real logos). The deployment-log slot on index.html and the .dlog CSS component await the first REAL story: convert one of the seven permitted clients (assets/logo/PERMISSIONS.md) into an anonymized DEPLOYMENT entry with a true number. Highest-leverage sales asset on the site.
 
 ## Deploy & Performance
 
@@ -53,3 +49,7 @@ components.js initThemeButtons duplicates theme.js apply() label logic ('◑ Lig
 Off-scale spacing values remain in component CSS (14/18/22px gaps and paddings) vs the 8px token scale. Snap or document.
 
 ## Completed
+
+### Replace the SEE/REASON/ACT hexagon diagram
+The problem section now carries the simplified Before/After ops map (relocated from the hero) — the last abstract-AI visual is gone.
+**Completed:** v1.0.1.0 (2026-08-10)
