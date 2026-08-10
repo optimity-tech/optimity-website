@@ -91,7 +91,7 @@ The visitor must recognize themselves: a realistic SME environment (CRM, spreads
 Mono labels like `SYSTEM STATUS` · `DEPLOYMENT 03` · `CURRENT STATE` · `TARGET STATE` · `INTEGRATION` · `PRODUCTION` · `OPERATIONAL RESULT` are on-brand. **Never fake technical complexity:** no labeling a static illustration "LIVE …" or "… ENGINE", no implying functionality that doesn't exist. Overclaiming labels are a Content Integrity violation.
 
 ## Navigation
-Minimal: **Work · What We Deploy · How We Work · About · [Book an Operations Teardown]** (button). "Start a Project" register was considered and rejected — the Teardown is the deliberately low-friction wedge; the nav CTA keeps it. No enterprise mega-nav.
+Current approved structure: **How We Work · Industries · Why Optimity · About Us · Contact · [Book an Operations Teardown]** (button). The founder-direction naming (**Work · What We Deploy · How We Work · About**) remains the target for a future restructure once real deployment stories exist to anchor a "Work" page; "Start a Project" register was considered and rejected — the Teardown is the deliberately low-friction wedge. No enterprise mega-nav.
 
 ## Motion
 - **Approach:** minimal-functional. Fast, precise, no choreography. Motion communicates systems becoming operational (data moving, connections resolving, states changing) — never ambient decoration.
