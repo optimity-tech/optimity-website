@@ -35,7 +35,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <script>(function(){try{var t=localStorage.getItem("optimity-theme");if(!t&&window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)t="dark";if(t==="dark")document.documentElement.setAttribute("data-theme","dark");}catch(e){}})();</script>
-<link rel="stylesheet" href="styles.css?v=20260809-v1">
+<link rel="stylesheet" href="styles.css?v=20260810-v1">
 <!-- LLM & AI Agent Markdown Discovery -->
 <link rel="alternate" type="text/markdown" title="llms.txt" href="/llms.txt">
 <!-- Schema.org JSON-LD for Google Sitelinks & Organization -->
@@ -128,30 +128,14 @@
     <p class="hero-cta note">A free working teardown of your operations. No deck, no pitch.</p>
   </div>
 
-  <!-- Before/After Operations Map — the deployment artifact -->
-  <div class="artifact opsmap" aria-label="Before and after operations map: scattered tools connected into one operational system">
-    <div class="opsmap-zone opsmap-current">
-      <div class="opsmap-label state-label">Current state</div>
-      <div class="opsmap-boxes">
-        <span class="opsmap-box">Spreadsheets</span><span class="opsmap-box">WhatsApp</span><span class="opsmap-box">CRM</span>
-        <span class="opsmap-box">Accounting</span><span class="opsmap-box">Email</span><span class="opsmap-box">ERP</span>
-      </div>
-      <svg class="opsmap-scribble" width="100%" height="34" viewBox="0 0 480 34" fill="none" aria-hidden="true">
-        <path d="M20 4 C120 34, 180 -6, 260 22 S 400 8, 462 26" stroke="var(--info, #3A5A8C)" stroke-width="1" stroke-dasharray="3 4"/>
-        <path d="M60 28 C150 2, 300 32, 440 6" stroke="var(--info, #3A5A8C)" stroke-width="1" stroke-dasharray="3 4"/>
-        <text x="188" y="13" font-size="9" fill="var(--info, #3A5A8C)">manual re-entry</text>
-      </svg>
-    </div>
-    <div class="opsmap-mid"><span class="opsmap-line"></span><span class="opsmap-fd mono">Forward deployment ↓</span><span class="opsmap-line"></span></div>
-    <div class="opsmap-zone opsmap-target">
-      <div class="opsmap-label target-label">Target state</div>
-      <div class="opsmap-target-grid">
-        <div class="opsmap-tcol"><span class="opsmap-tbox">CRM</span><span class="opsmap-tbox">Spreadsheets</span><span class="opsmap-tbox">WhatsApp</span></div>
-        <div class="opsmap-core">One operational<br>system</div>
-        <div class="opsmap-tcol"><span class="opsmap-tbox">Accounting</span><span class="opsmap-tbox">ERP</span><span class="opsmap-tbox">Production ✓</span></div>
-      </div>
-      <div class="opsmap-note"><span>Same tools. Connected. In production.</span><span class="mono opsmap-sample">sample · illustrative</span></div>
-    </div>
+  <!-- What we deploy — the four capabilities, offer-first (2026-08-10 feedback) -->
+  <div class="artifact hero-caps" aria-label="What we build and deploy">
+    <div class="hero-caps-head mono">What we build and deploy</div>
+    <div class="hero-cap"><div class="hero-cap-n mono">A</div><div><h3>Operations &amp; ERP intelligence</h3><p>Ask your systems questions in plain language; catch problems before they cost you.</p></div></div>
+    <div class="hero-cap"><div class="hero-cap-n mono">B</div><div><h3>Customer &amp; CRM systems</h3><p>Turn stored data into the next best move, per account.</p></div></div>
+    <div class="hero-cap"><div class="hero-cap-n mono">C</div><div><h3>Automation &amp; agents</h3><p>Software that does the repetitive operational work, end to end.</p></div></div>
+    <div class="hero-cap"><div class="hero-cap-n mono">D</div><div><h3>Custom AI platforms</h3><p>Purpose-built, AI-native tools when off-the-shelf won&rsquo;t do.</p></div></div>
+    <div class="hero-caps-foot mono">On the systems you already run &middot; no rip-and-replace</div>
   </div>
 </div></div></header>
 
@@ -188,88 +172,25 @@
       <h2>Your business runs on systems that work. The problem is they can’t think.</h2>
       <p>Your ERP records every transaction but can’t tell you what’s about to go wrong. Your CRM stores every customer but won’t surface the next move. Generic AI tools ignore all of it — and “transformation” usually means ripping out software your team depends on daily. We do neither. We make what you already have see, reason, and act — or build it that way from the start.</p>
     </div>
-    <div class="problem-visual-card" aria-hidden="true">
-      <div class="problem-visual-header">
-        <span class="service-badge">Existing Enterprise Stack</span>
-        <span class="service-badge accent-badge">Optimity Intelligence Layer</span>
+    <div class="problem-visual-card opsmap opsmap--calm" aria-hidden="true">
+      <div class="opsmap-zone">
+        <div class="opsmap-label state-label">Current state</div>
+        <div class="opsmap-boxes">
+          <span class="opsmap-box">Spreadsheets</span><span class="opsmap-box">WhatsApp</span>
+          <span class="opsmap-box">CRM</span><span class="opsmap-box">ERP</span>
+        </div>
+        <div class="opsmap-annot mono">manual re-entry between every pair</div>
       </div>
-      <div class="problem-svg-container">
-        <svg viewBox="0 0 380 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Connecting Data Conduits to Central Core -->
-          <line x1="100" y1="38" x2="185" y2="90" stroke="var(--accent)">
-          </line>
-          <line x1="100" y1="90" x2="185" y2="90" stroke="var(--accent)">
-          </line>
-          <line x1="100" y1="142" x2="185" y2="90" stroke="var(--accent)">
-          </line>
-          <line x1="100" y1="38" x2="185" y2="90" stroke="currentColor" stroke-opacity="0.18"/>
-          <line x1="100" y1="90" x2="185" y2="90" stroke="currentColor" stroke-opacity="0.18"/>
-          <line x1="100" y1="142" x2="185" y2="90" stroke="currentColor" stroke-opacity="0.18"/>
-
-          <!-- Traveling Data Packets along Conduits -->
-          <circle cx="142" cy="64" r="3.5" fill="var(--accent)">
-          </circle>
-          <circle cx="142" cy="90" r="3.5" fill="var(--accent)">
-          </circle>
-          <circle cx="142" cy="116" r="3.5" fill="var(--accent)">
-          </circle>
-
-          <!-- Outbound Action Conduits -->
-          <line x1="245" y1="90" x2="280" y2="60" stroke="var(--accent)">
-          </line>
-          <line x1="245" y1="90" x2="280" y2="120" stroke="var(--accent)">
-          </line>
-          <line x1="245" y1="90" x2="280" y2="60" stroke="currentColor" stroke-opacity="0.18"/>
-          <line x1="245" y1="90" x2="280" y2="120" stroke="currentColor" stroke-opacity="0.18"/>
-
-          <!-- LEFT: Enterprise Systems Boxes -->
-          <!-- ERP -->
-          <rect x="16" y="20" width="84" height="36" rx="6" stroke="currentColor" stroke-width="1.6" fill="var(--paper)"/>
-          <text x="30" y="38" fill="currentColor" font-family="monospace" font-size="8" font-weight="bold">ERP</text>
-          <text x="30" y="48" fill="var(--muted)" font-family="sans-serif" font-size="7">Transactions</text>
-          <circle cx="86" cy="38" r="3" fill="currentColor" fill-opacity="0.4">
-          </circle>
-
-          <!-- CRM -->
-          <rect x="16" y="72" width="84" height="36" rx="6" stroke="currentColor" stroke-width="1.6" fill="var(--paper)"/>
-          <text x="30" y="90" fill="currentColor" font-family="monospace" font-size="8" font-weight="bold">CRM</text>
-          <text x="30" y="100" fill="var(--muted)" font-family="sans-serif" font-size="7">Customers</text>
-          <circle cx="86" cy="90" r="3" fill="currentColor" fill-opacity="0.4">
-          </circle>
-
-          <!-- Tools / Generic AI -->
-          <rect x="16" y="124" width="84" height="36" rx="6" stroke="currentColor" stroke-width="1.6" fill="var(--paper)"/>
-          <text x="30" y="142" fill="currentColor" font-family="monospace" font-size="8" font-weight="bold">TOOLS</text>
-          <text x="30" y="152" fill="var(--muted)" font-family="sans-serif" font-size="7">Operations</text>
-          <circle cx="86" cy="142" r="3" fill="currentColor" fill-opacity="0.4">
-          </circle>
-
-          <!-- CENTER: Optimity Intelligence Core (See · Reason · Act) -->
-          <polygon points="215,58 240,73 240,107 215,122 190,107 190,73" stroke="var(--accent)" stroke-width="2" fill="var(--surface)"/>
-          
-          <!-- Stacked Labels (SEE / REASON / ACT) -->
-          <text x="215" y="74" fill="currentColor" font-family="monospace" font-size="7" text-anchor="middle" font-weight="bold">SEE</text>
-          
-          <rect x="193" y="82" width="44" height="15" rx="3" fill="var(--accent)" fill-opacity="0.18" stroke="var(--accent)" stroke-width="1"/>
-          <text x="215" y="93" fill="var(--accent)" font-family="monospace" font-size="7.5" text-anchor="middle" font-weight="bold">REASON</text>
-          
-          <text x="215" y="112" fill="currentColor" font-family="monospace" font-size="7" text-anchor="middle" font-weight="bold">ACT</text>
-
-          <!-- RIGHT: Actionable Outcomes -->
-          <!-- Top Alert Box -->
-          <rect x="280" y="44" width="84" height="32" rx="6" stroke="var(--accent)" stroke-width="1.8" fill="var(--paper)"/>
-          <circle cx="292" cy="60" r="3.5" fill="var(--accent)">
-          </circle>
-          <text x="303" y="57" fill="currentColor" font-family="monospace" font-size="7" font-weight="bold">PREDICT</text>
-          <text x="303" y="67" fill="var(--muted)" font-family="sans-serif" font-size="6.5">Prevent Drift</text>
-
-          <!-- Bottom Action Box -->
-          <rect x="280" y="104" width="84" height="32" rx="6" stroke="var(--accent)" stroke-width="1.8" fill="var(--paper)"/>
-          <circle cx="292" cy="120" r="3.5" fill="var(--accent)">
-          </circle>
-          <text x="303" y="117" fill="currentColor" font-family="monospace" font-size="7" font-weight="bold">EXECUTE</text>
-          <text x="303" y="127" fill="var(--muted)" font-family="sans-serif" font-size="6.5">Next Best Move</text>
-        </svg>
+      <div class="opsmap-mid"><span class="opsmap-line"></span><span class="opsmap-fd mono">Forward deployment ↓</span><span class="opsmap-line"></span></div>
+      <div class="opsmap-zone">
+        <div class="opsmap-label target-label">Target state</div>
+        <div class="opsmap-target-grid">
+          <div class="opsmap-tcol"><span class="opsmap-tbox">CRM</span><span class="opsmap-tbox">Spreadsheets</span></div>
+          <div class="opsmap-core">One operational<br>system</div>
+          <div class="opsmap-tcol"><span class="opsmap-tbox">ERP</span><span class="opsmap-tbox">Production ✓</span></div>
+        </div>
+        <div class="opsmap-note"><span>Same tools. Connected. In production.</span><span class="mono opsmap-sample">sample · illustrative</span></div>
+      </div>
     </div>
   </div>
 </div></section>
@@ -295,106 +216,12 @@
   </div>
 </div></section>
 
-<!-- WHAT WE BUILD -->
-<section><div class="wrap">
-  <div class="section-head">
-    <span class="kicker">What we build</span>
-    <h2>Intelligence across the systems that run your business.</h2>
-  </div>
-  <div class="caps">
-    <div class="cap"><div class="cap-n">A</div><div><h3>Operations &amp; ERP intelligence</h3><p>Ask your systems questions in plain language; catch problems before they cost you.</p></div></div>
-    <div class="cap"><div class="cap-n">B</div><div><h3>Customer &amp; CRM systems</h3><p>Turn stored data into the next best move, per account.</p></div></div>
-    <div class="cap"><div class="cap-n">C</div><div><h3>Automation &amp; agents</h3><p>Software that does the repetitive operational work, end to end.</p></div></div>
-    <div class="cap"><div class="cap-n">D</div><div><h3>Custom AI platforms</h3><p>Purpose-built, AI-native tools when off-the-shelf won’t do.</p></div></div>
-  </div>
-</div></section>
+<!-- "What we build" moved into the hero panel (2026-08-10 feedback) -->
 
-<!-- TEARDOWNS ACROSS INDUSTRIES -->
-<section id="teardowns" class="band"><div class="wrap">
-  <div class="section-head">
-    <span class="kicker">Deployment log</span>
-    <h2>From problem to production, repeatedly.</h2>
-    <p>Three composite deployments, shown the way real ones read. We publish real results only anonymized — or named with permission.</p>
-  </div>
-  <div class="dlog">
-
-    <!-- Deployment 01 — Cordova -->
-    <article class="dlog-row">
-      <div class="dlog-meta">
-        <span class="dlog-dep mono">Deployment 01</span>
-        <h3 class="dlog-name">Cordova Supply Co.</h3>
-        <span class="dlog-sector mono">Distribution · 90 staff</span>
-        <div class="dlog-chips"><span class="systag">ERP · Dynamics 365</span><span class="systag">CRM · Salesforce</span><span class="systag">Composite example</span></div>
-      </div>
-      <div class="dlog-body">
-        <div class="dlog-diagram" aria-hidden="true">
-          <div class="dlog-cluster"><span class="dlog-zl state-label mono">Current state</span><div class="dlog-boxes"><span class="dlog-cbox">Dynamics</span><span class="dlog-cbox">Salesforce</span><span class="dlog-cbox">Excel quoting</span></div></div>
-          <span class="dlog-arrow"></span>
-          <div class="dlog-corewrap"><span class="dlog-zl target-label mono">Target state</span><span class="dlog-core">Quote &amp; margin intelligence</span></div>
-          <span class="dlog-arrow"></span>
-          <div class="dlog-prodwrap"><span class="dlog-zl mono">&nbsp;</span><span class="dlog-prod">Production</span></div>
-        </div>
-        <div class="dlog-cols">
-          <div class="dlog-col"><span class="mono dlog-h">The problem</span><p>Open quotes ranked by hand every morning; margin drift only surfaced at month-close, after it had cost real money.</p></div>
-          <div class="dlog-col"><span class="mono dlog-h">The system</span><p>An intelligence layer on the ERP and CRM — ranking quotes by win-probability, flagging accounts drifting below target margin.</p></div>
-          <div class="dlog-col"><span class="mono dlog-h">The deployment</span><p>Inside Dynamics and Salesforce, exceptions-only alerts. Reps kept their screens; the ranking came to them.</p></div>
-          <div class="dlog-col"><span class="mono dlog-h">The result</span><p class="dlog-result">Quote follow-up 3 days <b>→ same day</b></p><p class="dlog-resnote">margin drift caught in-week</p></div>
-        </div>
-      </div>
-    </article>
-
-    <!-- Deployment 02 — Meridian -->
-    <article class="dlog-row">
-      <div class="dlog-meta">
-        <span class="dlog-dep mono">Deployment 02</span>
-        <h3 class="dlog-name">Meridian Studio</h3>
-        <span class="dlog-sector mono">Creative agency · 40 staff</span>
-        <div class="dlog-chips"><span class="systag">Asana</span><span class="systag">HubSpot</span><span class="systag">QuickBooks</span><span class="systag">Composite example</span></div>
-      </div>
-      <div class="dlog-body">
-        <div class="dlog-diagram" aria-hidden="true">
-          <div class="dlog-cluster"><span class="dlog-zl state-label mono">Current state</span><div class="dlog-boxes"><span class="dlog-cbox">Asana</span><span class="dlog-cbox">HubSpot</span><span class="dlog-cbox">QuickBooks</span></div></div>
-          <span class="dlog-arrow"></span>
-          <div class="dlog-corewrap"><span class="dlog-zl target-label mono">Target state</span><span class="dlog-core">Project profit layer</span></div>
-          <span class="dlog-arrow"></span>
-          <div class="dlog-prodwrap"><span class="dlog-zl mono">&nbsp;</span><span class="dlog-prod">Production</span></div>
-        </div>
-        <div class="dlog-cols">
-          <div class="dlog-col"><span class="mono dlog-h">The problem</span><p>Quotes, projects, and invoices lived in three tools. Nothing reconciled; month-end took a week of chasing.</p></div>
-          <div class="dlog-col"><span class="mono dlog-h">The system</span><p>One workflow layer connecting CRM, project tracker, and accounting — invoice drafts written from project data.</p></div>
-          <div class="dlog-col"><span class="mono dlog-h">The deployment</span><p>Integrated with the tools the team already used. Nothing ripped out; the team kept working the way they work.</p></div>
-          <div class="dlog-col"><span class="mono dlog-h">The result</span><p class="dlog-result">Invoice lag 11 days <b>→ 2 days</b></p></div>
-        </div>
-      </div>
-    </article>
-
-    <!-- Deployment 03 — Harbor & Pine -->
-    <article class="dlog-row">
-      <div class="dlog-meta">
-        <span class="dlog-dep mono">Deployment 03</span>
-        <h3 class="dlog-name">Harbor <span class="amp">&amp;</span> Pine</h3>
-        <span class="dlog-sector mono">Specialty retail · 60 staff</span>
-        <div class="dlog-chips"><span class="systag">NetSuite</span><span class="systag">Lightspeed POS</span><span class="systag">Shopify</span><span class="systag">Composite example</span></div>
-      </div>
-      <div class="dlog-body">
-        <div class="dlog-diagram" aria-hidden="true">
-          <div class="dlog-cluster"><span class="dlog-zl state-label mono">Current state</span><div class="dlog-boxes"><span class="dlog-cbox">Shopify</span><span class="dlog-cbox">POS</span><span class="dlog-cbox">Spreadsheets</span></div></div>
-          <span class="dlog-arrow"></span>
-          <div class="dlog-corewrap"><span class="dlog-zl target-label mono">Target state</span><span class="dlog-core">Inventory system</span></div>
-          <span class="dlog-arrow"></span>
-          <div class="dlog-prodwrap"><span class="dlog-zl mono">&nbsp;</span><span class="dlog-prod">Production</span></div>
-        </div>
-        <div class="dlog-cols">
-          <div class="dlog-col"><span class="mono dlog-h">The problem</span><p>Three stock counts, none of them true. Web oversold what stores had already sold.</p></div>
-          <div class="dlog-col"><span class="mono dlog-h">The system</span><p>A single inventory layer reconciling Shopify, POS, and the buying spreadsheet — surfacing mismatches only.</p></div>
-          <div class="dlog-col"><span class="mono dlog-h">The deployment</span><p>Wired into existing accounts; the team kept every tool it already knew.</p></div>
-          <div class="dlog-col"><span class="mono dlog-h">The result</span><p class="dlog-result">Stock mismatches <b>−78%</b></p></div>
-        </div>
-      </div>
-    </article>
-
-  </div>
-</div></section>
+<!-- DEPLOYMENT LOG slot — intentionally empty (2026-08-10 feedback).
+     Composite dossiers read as fake next to real client logos. The .dlog CSS
+     component is kept; this slot receives the first REAL anonymized deployment
+     story (TODOS.md P1) once a client from assets/logo/PERMISSIONS.md agrees. -->
 
 <!-- TRUSTED BY COMPANIES -->
 <section class="trusted-section">
@@ -447,7 +274,7 @@
 
 <div id="site-footer"><!--#include virtual="/footer.html" --></div>
 
-<script src="components.js?v=20260809-v1"></script>
-<script src="theme.js?v=20260809-v1"></script>
+<script src="components.js?v=20260810-v1"></script>
+<script src="theme.js?v=20260810-v1"></script>
 </body>
 </html>

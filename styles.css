@@ -586,3 +586,24 @@ footer.site .fmeta { font-family: var(--mono); font-size: .7rem; text-transform:
   .split-cols { grid-template-columns: 1fr; }
 }
 .operating-model-card--roomy { padding: var(--sp-48); }
+
+/* Hero capabilities panel (offer-first hero, 2026-08-10 feedback) */
+.hero-caps { padding: var(--sp-24) var(--sp-24) var(--sp-16); }
+.hero-caps-head { color: var(--accent); border-bottom: 1px solid var(--hairline); padding-bottom: 12px; margin-bottom: var(--sp-8); }
+.hero-cap { display: grid; grid-template-columns: 24px 1fr; gap: var(--sp-16); padding: 14px 0; border-bottom: 1px solid var(--hairline); }
+.hero-cap:last-of-type { border-bottom: 0; }
+.hero-cap-n { color: var(--accent); padding-top: 3px; }
+.hero-cap h3 { font-size: 1.05rem; margin-bottom: 3px; }
+.hero-cap p { font-size: .88rem; color: var(--muted); line-height: 1.45; }
+.hero-caps-foot { color: var(--muted); border-top: 1px solid var(--hairline); padding-top: 12px; font-size: .68rem; }
+
+/* Calm ops map (problem-section version — larger labels, phone-legible) */
+.opsmap--calm .opsmap-box, .opsmap--calm .opsmap-tbox { font-size: .8rem; padding: 7px 12px; }
+.opsmap--calm .opsmap-core { font-size: .78rem; }
+.opsmap--calm .opsmap-label { font-size: .78rem; }
+.opsmap-annot { color: var(--info); font-size: .72rem; margin-top: 10px; }
+@media (max-width: 680px) {
+  .opsmap-target-grid { grid-template-columns: 1fr; justify-items: start; gap: var(--sp-8); }
+  .opsmap-core { order: -1; }
+  .opsmap-tcol { flex-direction: row; flex-wrap: wrap; }
+}
