@@ -1,18 +1,14 @@
 // Optimity components loader & active link highlighting
 (function() {
   function initNavHighlight() {
-    var path = window.location.pathname.split('/').pop() || 'index.html';
+    // Normalize so clean URLs (/about via nginx try_files) match hrefs (about.html).
+    function norm(p) { return (p || '').split('/').pop().replace(/\.html$/, '') || 'index'; }
+    var path = norm(window.location.pathname);
     var links = document.querySelectorAll('.navlinks a.link');
     for (var i = 0; i < links.length; i++) {
-      var href = links[i].getAttribute('href');
-      var dataNav = links[i].getAttribute('data-nav');
-      var target = dataNav || href;
-      if (target === path || (path === 'index.html' && (target === 'index.html' || target === '#teardowns'))) {
-        if (target !== '#teardowns' || window.location.hash === '#teardowns') {
-          if (target === path || (path === 'index.html' && target === 'index.html')) {
-            links[i].setAttribute('aria-current', 'page');
-          }
-        }
+      var target = norm(links[i].getAttribute('data-nav') || links[i].getAttribute('href'));
+      if (target === path) {
+        links[i].setAttribute('aria-current', 'page');
       } else {
         links[i].removeAttribute('aria-current');
       }
@@ -37,7 +33,7 @@
       if (callback) callback();
       return;
     }
-    fetch(file + '?v=' + new Date().getTime())
+    fetch(file + '?v=20260809-v1')
       .then(function(res) {
         if (!res.ok) throw new Error('Failed to load ' + file);
         return res.text();
