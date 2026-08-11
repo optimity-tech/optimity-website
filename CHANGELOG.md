@@ -4,6 +4,17 @@ All notable changes to the Optimity Technologies website.
 
 Format: [X.Y.Z.W] - YYYY-MM-DD, sections Added / Changed / Fixed / Removed.
 
+## [1.0.1.0] - 2026-08-10
+
+Homepage revisions from the first stakeholder review of staging (phone, dark mode).
+
+### Changed
+- Hero artifact now answers "what do you do": the four capabilities (Operations & ERP intelligence, Customer & CRM systems, Automation & agents, Custom AI platforms) replace the Before/After Operations Map
+- The ops map moved into the "systems that work / can't think" section — simplified to phone-legible size — replacing the last abstract diagram on the site
+
+### Removed
+- Composite deployment dossiers: fictional companies with fictional results read as fake next to real client logos. The slot returns when the first real, permissioned deployment story lands; the trusted-logos strip is now the sole (fully real) proof
+
 ## [1.0.0.0] - 2026-08-09
 
 First tracked release: the full redesigned six-page site under DESIGN.md v3 ("Engineered Confidence for SME Operators" + the Believability Mandate).
