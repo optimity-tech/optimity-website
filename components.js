@@ -4,13 +4,25 @@
     // Normalize so clean URLs (/about via nginx try_files) match hrefs (about.html).
     function norm(p) { return (p || '').split('/').pop().replace(/\.html$/, '') || 'index'; }
     var path = norm(window.location.pathname);
-    var links = document.querySelectorAll('.navlinks a.link');
+    var links = document.querySelectorAll('.navlinks a');
+    var isDropdownActive = false;
     for (var i = 0; i < links.length; i++) {
       var target = norm(links[i].getAttribute('data-nav') || links[i].getAttribute('href'));
       if (target === path) {
         links[i].setAttribute('aria-current', 'page');
+        if (links[i].classList.contains('dropdown-item')) {
+          isDropdownActive = true;
+        }
       } else {
         links[i].removeAttribute('aria-current');
+      }
+    }
+    var trigger = document.querySelector('.nav-dropdown-trigger');
+    if (trigger) {
+      if (isDropdownActive) {
+        trigger.setAttribute('aria-current', 'page');
+      } else {
+        trigger.removeAttribute('aria-current');
       }
     }
   }
