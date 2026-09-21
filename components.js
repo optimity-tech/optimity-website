@@ -17,12 +17,16 @@
         links[i].removeAttribute('aria-current');
       }
     }
-    var trigger = document.querySelector('.nav-dropdown-trigger');
-    if (trigger) {
-      if (isDropdownActive) {
-        trigger.setAttribute('aria-current', 'page');
-      } else {
-        trigger.removeAttribute('aria-current');
+    var dropdowns = document.querySelectorAll('.nav-dropdown');
+    for (var d = 0; d < dropdowns.length; d++) {
+      var trigger = dropdowns[d].querySelector('.nav-dropdown-trigger');
+      var activeChild = dropdowns[d].querySelector('.dropdown-item[aria-current="page"]');
+      if (trigger) {
+        if (activeChild) {
+          trigger.setAttribute('aria-current', 'page');
+        } else {
+          trigger.removeAttribute('aria-current');
+        }
       }
     }
   }
@@ -45,7 +49,7 @@
       if (callback) callback();
       return;
     }
-    fetch(file + '?v=20260809-v1')
+    fetch(file + '?v=20260921-v5')
       .then(function(res) {
         if (!res.ok) throw new Error('Failed to load ' + file);
         return res.text();
